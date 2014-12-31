@@ -109,7 +109,7 @@ footer {
 }
 
 #ookb p {
-  color: rgba(125,116,87,.9);
+  color: @maintext;
   font-size: 75%;
   margin:0;
   margin-right: 26px;
@@ -136,10 +136,8 @@ a { color: rgba(105,59,62,1); }
 
 #site-name, #site-name a {
   color:white;
-  font-family: 'VeveyRegular', Helvetica, Arial, Sans-serif !important;
+  .vevey-stack;
   font-size: 20px;
-  font-style: normal;
-  font-weight: normal;
   letter-spacing: 1px;
   line-height: 30px;
   text-decoration: none;
@@ -165,40 +163,35 @@ section#topbar nav ul#main-menu li a:hover {
 
 section#topbar nav ul#main-menu li.active,
 section#topbar nav ul#main-menu a.active {
-  color:rgba(158,81,78,1);
+  color: @activetext;
 }
-
 
 #content h1.title,
 .section h2.block-title {
   border-top: 2px solid;
-  font-size: 12px;
+  font-size: .8rem;
   letter-spacing: 2px;
-  line-height: 15px;
-  margin: 0 0 26px 0;
+  line-height: 1rem;
+  margin: 0 0 1.5rem 0;
   padding: 0;
-  padding-top: 6px;
+  padding-top: .4rem;
   text-transform: uppercase;
-  /**/
-  font-family: 'DemingEPRegular', Helvetica, Arial, Sans-serif;
+  .deming-stack;
 }
 
 #main p {
-  font-size: 18px;
+  color:@maintext;
+  font-size: 1.25rem;
   font-weight: bold;
-  line-height: 20px;
-  /**/
-  color:rgba(125,116,87,.9);
 }
 
 .front #node-2 p {
-  font-size: 30px;
+  font-size: 2rem;
   font-weight: bold;
-  line-height: 30px;
-  margin: 0;
+  line-height: 2rem;
   /**/
 	text-shadow: 0 1px 1px #FFF;
-  color:rgba(125,116,87,.9);
+  color:@maintext;
 }
 
 body.page-members div.view-id-members table thead {
@@ -208,21 +201,20 @@ body.page-members div.view-id-members table thead {
   letter-spacing: 1px;
   text-transform: uppercase;
 	text-shadow: 0 1px 1px #FFF;
-  color:rgba(125,116,87,.9);
+  color:@maintext;
 }
 
 body.page-members div.view-id-members table thead a {
   font-family: Helvetica, Arial, Sans-serif;
 	text-shadow: 0 1px 1px #FFF;
-  color:rgba(125,116,87,.9);
+  color:@maintext;
   text-decoration: none;
 }
 
 body.page-members div.view-id-members table tbody,
 body.page-members div.view-id-members table tbody td,
 h3.event-title {
-  font-family: 'VeveyRegular', Helvetica, Arial, Sans-serif !important;
-  font-weight: normal !important;
+  .vevey-stack;
   font-size: 24px;
   letter-spacing: 1px;
 }
@@ -267,11 +259,9 @@ div.location span {
 }
 
 footer p {
-  /*color:rgba(204,188,143,1);*/
-  /*color:rgba(178,164,125,1);*/
-  color:rgba(125,116,87,.9);
+  color:@maintext;
 }
 
 /* -----------------------------------------------------*/
-/* ---------------->>> /END hg.less <<<-----------------*/
+/* ---------------->>> /END bbg.less <<<-----------------*/
 /* -----------------------------------------------------*/
