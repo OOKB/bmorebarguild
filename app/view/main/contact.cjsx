@@ -34,6 +34,8 @@ module.exports = React.createClass
     </div>
 
   render: ->
+    unless @props.data.wufoo
+      return false
     {id, subdomain} = @props.data.wufoo
     form = @wufoo id, subdomain
 
