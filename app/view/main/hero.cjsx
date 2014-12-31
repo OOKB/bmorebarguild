@@ -7,5 +7,5 @@ module.exports = React.createClass
     pgTitle = title + ' | ' + tagline
 
     <section id="hero">
-      <img src="assets/logo.png" alt="{pgTitle}" />
+      <img src="logo.png" alt="{pgTitle}" />
     </section>

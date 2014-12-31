@@ -34,8 +34,11 @@ module.exports = React.createClass
     </div>
 
   render: ->
-    {id, subdomain} = @props.data.wufoo
-    form = @wufoo id, subdomain
+    unless @props.data.wufoo and @props.data.wufoo.hash and @props.data.wufoo.subdomain
+      console.log 'no wufoo info in data'
+      return false
+    {hash, subdomain} = @props.data.wufoo
+    form = @wufoo hash, subdomain
 
     <section id="contact">
       <h3>Contact</h3>
