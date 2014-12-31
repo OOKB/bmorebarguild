@@ -1,113 +1,9 @@
 /* -----------------------------------------------------*/
-/* ------------------->>> hg.less <<<-------------------*/
+/* ------------------->>> bbg.less <<<-------------------*/
 /* -----------------------------------------------------*/
 
-/* Custom Hunting Ground Styles
+/* Custom Bar Guild Styles
 ========================================================================================= */
-* { box-sizing: border-box; position: relative; }
-
-/* super simple CF from the very end of here: http://css-tricks.com/snippets/css/clear-fix/ */
-.clearfix::after,
-.group::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* columnar stuff */
-#wrapper {
-  margin: 48px auto;
-  padding: 0 12px 48px 12px;
-  width: 100%;
-}
-
-.column,
-.columns {
-  margin: 0 0 24px 0;
-  padding: 0;
-}
-
-.group {
-  margin: 0 0 24px 0;
-}
-
-.one,
-.two,
-.three,
-.four,
-.five,
-.six, .halfwidth,
-.seven,
-.eight,
-.nine,
-.ten,
-.eleven,
-.twelve, .fullwidth    { width: calc(100% / 12 * 12); }
-
-@media (min-width: 800px) {
-  .left        {float:left;}
-  .right       {float:right;}
-  .clear       {display:block;clear:both;}
-  .clearLeft   {display:block;clear:left;}
-  .clearRight  {display:block;clear:right;}
-
-  #wrapper {
-    margin: 48px auto;
-    padding-bottom: 48px;
-    max-width: 1200px;
-  }
-
-  /* columnar stuff */
-  .column,
-  .columns {
-    float: left;
-    margin: 0 0 24px 0;
-    padding: 0 12px;
-  }
-
-  .group {
-    margin: 0 -12px 24px -12px;
-  }
-
-  .one                   { width: calc(100% / 12 * 01); }
-  .two                   { width: calc(100% / 12 * 02); }
-  .three                 { width: calc(100% / 12 * 03); }
-  .four                  { width: calc(100% / 12 * 04); }
-  .five                  { width: calc(100% / 12 * 05); }
-  .six, .halfwidth       { width: calc(100% / 12 * 06); }
-  .seven                 { width: calc(100% / 12 * 07); }
-  .eight                 { width: calc(100% / 12 * 08); }
-  .nine                  { width: calc(100% / 12 * 09); }
-  .ten                   { width: calc(100% / 12 * 10); }
-  .eleven                { width: calc(100% / 12 * 11); }
-  .twelve, .fullwidth    { width: calc(100% / 12 * 12); }
-
-  .offset-one            { margin-left: calc(100% / 12 * 01); }
-  .offset-two            { margin-left: calc(100% / 12 * 02); }
-  .offset-three          { margin-left: calc(100% / 12 * 03); }
-  .offset-four           { margin-left: calc(100% / 12 * 04); }
-  .offset-five           { margin-left: calc(100% / 12 * 05); }
-  .offset-six            { margin-left: calc(100% / 12 * 06); }
-  .offset-seven          { margin-left: calc(100% / 12 * 07); }
-  .offset-eight          { margin-left: calc(100% / 12 * 08); }
-  .offset-nine           { margin-left: calc(100% / 12 * 09); }
-  .offset-ten            { margin-left: calc(100% / 12 * 10); }
-  .offset-eleven         { margin-left: calc(100% / 12 * 11); }
-  .offset-twelve         { margin-left: calc(100% / 12 * 12); }
-
-}
-
-/* ====================================================================================== */
-
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-}
-
-#wrapper > h1 { display: none; }
-
 header {
   text-align: center;
 }
@@ -134,12 +30,6 @@ img { width: 100%; max-width: 100%; height: auto; }
 body {
   .grotesque-stack;
   font-weight: 400;
-  /**/
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  hyphens: auto;
-  /**/
-  text-rendering: optimizeLegibility;
 }
 
 /* Links */
