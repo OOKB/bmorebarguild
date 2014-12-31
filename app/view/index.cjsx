@@ -16,7 +16,7 @@ module.exports = React.createClass
         <link rel="stylesheet" href="assets/app.css" />
       </head>
       <body>
-        <div id="wrapper">
+        <div id="wrapper" className="container">
           <Head data={@props.data} />
           <Main data={@props.data} />
           <Foot data={@props.data} />

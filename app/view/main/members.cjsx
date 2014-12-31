@@ -24,7 +24,7 @@ module.exports = React.createClass
           {BarList}
         </ul></td></tr>
 
-    <section id="instagram">
+    <section id="members">
       <h3>Members</h3>
       <table id="bbg">
         <thead>

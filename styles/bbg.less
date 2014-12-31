@@ -21,7 +21,7 @@ body {
 }
 
 /* topbar with sitename and links */
-section#topbar {
+header {
   background: black;
   height: 30px;
   width:100%;
@@ -31,7 +31,7 @@ section#topbar {
   z-index: 9;
 }
 
-.admin-menu section#topbar {
+.admin-menu header {
   background: black;
   height: 30px;
   width:100%;
@@ -41,23 +41,23 @@ section#topbar {
   z-index: 9;
 }
 
-section#topbar .pad {
+header .pad {
   margin: 0 auto;
   width: 700px;
 }
 
-section#topbar #site-name {
+header #site-name {
   float: left;
   width:265px;
   margin-right: 25px;
 }
 
-section#topbar nav {
+header nav {
   float: right;
   width:410px;
 }
 
-section#topbar nav ul#main-menu {
+header nav ul#main-menu {
   height: 30px;
   margin: 0;
   padding: 3px 0 0 0;
@@ -66,32 +66,32 @@ section#topbar nav ul#main-menu {
 }
 
 /* MEMBER TABLE */
-body.page-members div.view-id-members table {
+#members table {
   font-size: 18px;
   line-height: 30px;
   text-align: left;
   width: 100%;
 }
 
-body.page-members div.view-id-members table thead {
+#members table thead {
   background: transparent;
   border-bottom: 1px solid black;
 }
 
-body.page-members div.view-id-members table tbody tr {
+#members table tbody tr {
   border-bottom: 1px dotted black;
 }
 
-body.page-members div.view-id-members table tr.odd {
+#members table tr.odd {
   background: rgba(125,116,87,.2);
 }
 
-body.page-members div.view-id-members table tr.even {
+#members table tr.even {
   background: rgba(125,116,87,.12);
 }
 
-body.page-members div.view-id-members table th,
-body.page-members div.view-id-members table td {
+#members table th,
+#members table td {
   background: transparent;
   padding: 10px 4px 5px;
 }
@@ -134,17 +134,17 @@ text-rendering: optimizeLegibility;
 
 a { color: rgba(105,59,62,1); }
 
-#site-name, #site-name a {
+header h1 {
   color:white;
   .vevey-stack;
-  font-size: 20px;
+  font-size: 2em;
   letter-spacing: 1px;
   line-height: 30px;
   text-decoration: none;
 }
 
-section#topbar nav ul#main-menu li,
-section#topbar nav ul#main-menu li a {
+header nav ul li,
+header nav ul li a {
   color:rgba(238,230,217,1);
   font-size: 13px;
   font-style: normal;
@@ -155,37 +155,37 @@ section#topbar nav ul#main-menu li a {
   text-transform: uppercase;
 }
 
-section#topbar nav ul#main-menu li:hover,
-section#topbar nav ul#main-menu li a:hover {
+header nav ul li:hover,
+header nav ul li a:hover {
   color: white;
   text-decoration: underline;
 }
 
-section#topbar nav ul#main-menu li.active,
-section#topbar nav ul#main-menu a.active {
+header nav ul li.active,
+header nav ul a.active {
   color: @activetext;
 }
 
-#content h1.title,
-.section h2.block-title {
+section {
+  padding-top: 3rem;
+}
+
+section h3 {
   border-top: 2px solid;
   font-size: .8rem;
   letter-spacing: 2px;
   line-height: 1rem;
   margin: 0 0 1.5rem 0;
-  padding: 0;
   padding-top: .4rem;
   text-transform: uppercase;
   .deming-stack;
 }
 
-#main p {
-  color:@maintext;
-  font-size: 1.25rem;
-  font-weight: bold;
+#hero, #mission {
+  text-align: center;
 }
 
-.front #node-2 p {
+#mission p {
   font-size: 2rem;
   font-weight: bold;
   line-height: 2rem;
@@ -194,9 +194,8 @@ section#topbar nav ul#main-menu a.active {
   color:@maintext;
 }
 
-body.page-members div.view-id-members table thead {
+#members table thead {
   font-family: Helvetica, Arial, Sans-serif;
-  font-size: 14px;
   font-weight: bold;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -204,31 +203,29 @@ body.page-members div.view-id-members table thead {
   color:@maintext;
 }
 
-body.page-members div.view-id-members table thead a {
+ table thead a {
   font-family: Helvetica, Arial, Sans-serif;
 	text-shadow: 0 1px 1px #FFF;
   color:@maintext;
   text-decoration: none;
 }
 
-body.page-members div.view-id-members table tbody,
-body.page-members div.view-id-members table tbody td,
-h3.event-title {
+#members table tbody,
+#members table tbody td {
   .vevey-stack;
-  font-size: 24px;
+  font-size: 2rem;
   letter-spacing: 1px;
 }
 
-h3.event-title a {
-text-decoration: none;
+#bbg tbody tr {
+  border-bottom: 1px dotted black;
 }
-
-h3.event-title a:hover {
-text-decoration: underline;
+#bbg tbody tr:nth-child(odd) {
+  background: rgba(125, 116, 87, .1);
 }
-
-div.views-row.event h3.event-title {
-margin-top: 15px;
+#bbg td {
+  border-spacing: 0;
+  border-color: transparent;
 }
 
 div.event-date,

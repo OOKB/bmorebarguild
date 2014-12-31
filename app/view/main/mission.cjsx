@@ -7,6 +7,6 @@ module.exports = React.createClass
 
     <section id="mission">
       <div className="group">
-        <p className="eight columns offset-two">{mission}</p>
+        <p className="eight columns offset-by-two">{mission}</p>
       </div>
     </section>
