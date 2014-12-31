@@ -124,6 +124,154 @@ footer {
   width: 24px;
 }
 
+/* Typograhy, etc.
+====================================================================== */
+
+h1, h2, h3, h4, h5, h6, table {
+-webkit-font-smoothing: antialiased;
+text-rendering: optimizeLegibility;
+}
+
+a { color: rgba(105,59,62,1); }
+
+#site-name, #site-name a {
+  color:white;
+  font-family: 'VeveyRegular', Helvetica, Arial, Sans-serif !important;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 1px;
+  line-height: 30px;
+  text-decoration: none;
+}
+
+section#topbar nav ul#main-menu li,
+section#topbar nav ul#main-menu li a {
+  color:rgba(238,230,217,1);
+  font-size: 13px;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 1px;
+  line-height: 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+section#topbar nav ul#main-menu li:hover,
+section#topbar nav ul#main-menu li a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+section#topbar nav ul#main-menu li.active,
+section#topbar nav ul#main-menu a.active {
+  color:rgba(158,81,78,1);
+}
+
+
+#content h1.title,
+.section h2.block-title {
+  border-top: 2px solid;
+  font-size: 12px;
+  letter-spacing: 2px;
+  line-height: 15px;
+  margin: 0 0 26px 0;
+  padding: 0;
+  padding-top: 6px;
+  text-transform: uppercase;
+  /**/
+  font-family: 'DemingEPRegular', Helvetica, Arial, Sans-serif;
+}
+
+#main p {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 20px;
+  /**/
+  color:rgba(125,116,87,.9);
+}
+
+.front #node-2 p {
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 30px;
+  margin: 0;
+  /**/
+	text-shadow: 0 1px 1px #FFF;
+  color:rgba(125,116,87,.9);
+}
+
+body.page-members div.view-id-members table thead {
+  font-family: Helvetica, Arial, Sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+	text-shadow: 0 1px 1px #FFF;
+  color:rgba(125,116,87,.9);
+}
+
+body.page-members div.view-id-members table thead a {
+  font-family: Helvetica, Arial, Sans-serif;
+	text-shadow: 0 1px 1px #FFF;
+  color:rgba(125,116,87,.9);
+  text-decoration: none;
+}
+
+body.page-members div.view-id-members table tbody,
+body.page-members div.view-id-members table tbody td,
+h3.event-title {
+  font-family: 'VeveyRegular', Helvetica, Arial, Sans-serif !important;
+  font-weight: normal !important;
+  font-size: 24px;
+  letter-spacing: 1px;
+}
+
+h3.event-title a {
+text-decoration: none;
+}
+
+h3.event-title a:hover {
+text-decoration: underline;
+}
+
+div.views-row.event h3.event-title {
+margin-top: 15px;
+}
+
+div.event-date,
+div.location {
+  color: rgba(125, 116, 87, .9);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+div.event-date {
+  border-top: 1px dotted rgba(125, 116, 87, .9);
+  padding-top: 7.5px;
+}
+
+div.event-date .date-display-single,
+div.location div,
+div.location span {
+  color: black;
+}
+
+div.location {
+  margin-top: 15px;
+}
+
+div.location div,
+div.location span {
+  text-transform: capitalize;
+}
+
+footer p {
+  /*color:rgba(204,188,143,1);*/
+  /*color:rgba(178,164,125,1);*/
+  color:rgba(125,116,87,.9);
+}
+
 /* -----------------------------------------------------*/
 /* ---------------->>> /END hg.less <<<-----------------*/
 /* -----------------------------------------------------*/
