@@ -8,120 +8,11 @@ body {
   background: url(bbg-bg.jpg) center top no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  padding-bottom: 60px;
-}
-
-#header #logo img {
-  height: 270px;
-}
-
-#main section,
-.front #main #block-system-main {
-  margin-bottom: 56px;
-}
-
-/* topbar with sitename and links */
-header {
-  background: black;
-  height: 30px;
-  width:100%;
-  position: fixed;
-  top:0;
-  left:0;
-  z-index: 9;
-}
-
-.admin-menu header {
-  background: black;
-  height: 30px;
-  width:100%;
-  position: fixed;
-  top:30px;
-  left:0;
-  z-index: 9;
-}
-
-header .pad {
-  margin: 0 auto;
-  width: 700px;
-}
-
-header #site-name {
-  float: left;
-  width:265px;
-  margin-right: 25px;
-}
-
-header nav {
-  float: right;
-  width:410px;
-}
-
-header nav ul#main-menu {
-  height: 30px;
-  margin: 0;
-  padding: 3px 0 0 0;
-  text-align: right;
-  width: 410px;
-}
-
-/* MEMBER TABLE */
-#members table {
-  font-size: 18px;
-  line-height: 30px;
-  text-align: left;
-  width: 100%;
-}
-
-#members table thead {
-  background: transparent;
-  border-bottom: 1px solid black;
-}
-
-#members table tbody tr {
-  border-bottom: 1px dotted black;
-}
-
-#members table tr.odd {
-  background: rgba(125,116,87,.2);
-}
-
-#members table tr.even {
-  background: rgba(125,116,87,.12);
-}
-
-#members table th,
-#members table td {
-  background: transparent;
-  padding: 10px 4px 5px;
+  padding: 4rem 0;
 }
 
 footer {
   margin-top: 90px;
-}
-
-/* ookb styles */
-#ookb {
-  position: fixed;
-  bottom: 6px;
-  right: 6px;
-  padding-bottom: 6px;
-}
-
-#ookb p {
-  color: @maintext;
-  font-size: 75%;
-  margin:0;
-  margin-right: 26px;
-  text-transform: uppercase;
-}
-
-#ookb p img {
-  border: none;
-  display: block;
-  float: right;
-  margin: 0 0 -6px 0;
-  width: 24px;
 }
 
 /* Typograhy, etc.
@@ -134,35 +25,60 @@ text-rendering: optimizeLegibility;
 
 a { color: rgba(105,59,62,1); }
 
+/* topbar with sitename and links */
+header {
+  background: black;
+  height: 2rem;
+  width:100%;
+  position: fixed;
+  top:0;
+  left:0;
+  z-index: 9;
+}
+
 header h1 {
   color:white;
   .vevey-stack;
-  font-size: 2em;
+  font-size: 1.66rem;
   letter-spacing: 1px;
-  line-height: 30px;
+  line-height: 2rem;
   text-decoration: none;
+  float: left;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
-header nav ul li,
+header nav ul {
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
+
+header nav ul li {
+  display: inline-block;
+}
+
 header nav ul li a {
+  display: block;
   color:rgba(238,230,217,1);
-  font-size: 13px;
   font-style: normal;
   font-weight: normal;
   letter-spacing: 1px;
-  line-height: 30px;
+  line-height: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   text-decoration: none;
   text-transform: uppercase;
+  text-decoration: none;
 }
 
-header nav ul li:hover,
 header nav ul li a:hover {
   color: white;
-  text-decoration: underline;
 }
 
-header nav ul li.active,
-header nav ul a.active {
+header nav ul li.active a,
+header nav ul li a.active,
+header nav ul li a:active {
   color: @activetext;
 }
 
@@ -194,6 +110,11 @@ section h3 {
   color:@maintext;
 }
 
+/* Members list */
+#members table {
+  width: 100%;
+}
+
 #members table thead {
   font-family: Helvetica, Arial, Sans-serif;
   font-weight: bold;
@@ -201,6 +122,7 @@ section h3 {
   text-transform: uppercase;
 	text-shadow: 0 1px 1px #FFF;
   color:@maintext;
+  text-align: left;
 }
 
  table thead a {
@@ -208,6 +130,10 @@ section h3 {
 	text-shadow: 0 1px 1px #FFF;
   color:@maintext;
   text-decoration: none;
+}
+
+#members table tbody {
+  border-top: 1px solid black;
 }
 
 #members table tbody,
@@ -220,9 +146,19 @@ section h3 {
 #bbg tbody tr {
   border-bottom: 1px dotted black;
 }
+
+#bbg tbody tr:last-child {
+  border-bottom: none;
+}
+
 #bbg tbody tr:nth-child(odd) {
   background: rgba(125, 116, 87, .1);
 }
+
+#bbg tbody tr:hover {
+  background: rgba(158,81,78,.1);
+}
+
 #bbg td {
   border-spacing: 0;
   border-color: transparent;
