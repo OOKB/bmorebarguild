@@ -12,7 +12,6 @@ module.exports = React.createClass
     {data} = @props
 
     <main>
-      <Hero data={data} />
       <Mission data={data} />
       <Events data={data} />
       <Members data={data} />

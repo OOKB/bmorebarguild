@@ -7,6 +7,6 @@ module.exports = React.createClass
     <section id="events">
       <h3>Events</h3>
       <div className="group">
-        <p>{noEvents}</p>
+        <p className="twelve columns">{noEvents}</p>
       </div>
     </section>
