@@ -27,6 +27,13 @@ module.exports = React.createClass
     <section id="instagram">
       <h3>Members</h3>
       <table id="bbg">
+        <thead>
+          <tr>
+            <th className="views-align-left">Member</th>
+            <th></th>
+            <th className="views-align-left">Bar</th>
+          </tr>
+        </thead>
         <tbody>
           {MemberRows}
         </tbody>
