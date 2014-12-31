@@ -1,0 +1,267 @@
+/* -----------------------------------------------------*/
+/* ------------------->>> bbg.less <<<-------------------*/
+/* -----------------------------------------------------*/
+
+/* Custom Bar Guild Styles
+========================================================================================= */
+body {
+  background: url(bbg-bg.jpg) center top no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-bottom: 60px;
+}
+
+#header #logo img {
+  height: 270px;
+}
+
+#main section,
+.front #main #block-system-main {
+  margin-bottom: 56px;
+}
+
+/* topbar with sitename and links */
+section#topbar {
+  background: black;
+  height: 30px;
+  width:100%;
+  position: fixed;
+  top:0;
+  left:0;
+  z-index: 9;
+}
+
+.admin-menu section#topbar {
+  background: black;
+  height: 30px;
+  width:100%;
+  position: fixed;
+  top:30px;
+  left:0;
+  z-index: 9;
+}
+
+section#topbar .pad {
+  margin: 0 auto;
+  width: 700px;
+}
+
+section#topbar #site-name {
+  float: left;
+  width:265px;
+  margin-right: 25px;
+}
+
+section#topbar nav {
+  float: right;
+  width:410px;
+}
+
+section#topbar nav ul#main-menu {
+  height: 30px;
+  margin: 0;
+  padding: 3px 0 0 0;
+  text-align: right;
+  width: 410px;
+}
+
+/* MEMBER TABLE */
+body.page-members div.view-id-members table {
+  font-size: 18px;
+  line-height: 30px;
+  text-align: left;
+  width: 100%;
+}
+
+body.page-members div.view-id-members table thead {
+  background: transparent;
+  border-bottom: 1px solid black;
+}
+
+body.page-members div.view-id-members table tbody tr {
+  border-bottom: 1px dotted black;
+}
+
+body.page-members div.view-id-members table tr.odd {
+  background: rgba(125,116,87,.2);
+}
+
+body.page-members div.view-id-members table tr.even {
+  background: rgba(125,116,87,.12);
+}
+
+body.page-members div.view-id-members table th,
+body.page-members div.view-id-members table td {
+  background: transparent;
+  padding: 10px 4px 5px;
+}
+
+footer {
+  margin-top: 90px;
+}
+
+/* ookb styles */
+#ookb {
+  position: fixed;
+  bottom: 6px;
+  right: 6px;
+  padding-bottom: 6px;
+}
+
+#ookb p {
+  color: @maintext;
+  font-size: 75%;
+  margin:0;
+  margin-right: 26px;
+  text-transform: uppercase;
+}
+
+#ookb p img {
+  border: none;
+  display: block;
+  float: right;
+  margin: 0 0 -6px 0;
+  width: 24px;
+}
+
+/* Typograhy, etc.
+====================================================================== */
+
+h1, h2, h3, h4, h5, h6, table {
+-webkit-font-smoothing: antialiased;
+text-rendering: optimizeLegibility;
+}
+
+a { color: rgba(105,59,62,1); }
+
+#site-name, #site-name a {
+  color:white;
+  .vevey-stack;
+  font-size: 20px;
+  letter-spacing: 1px;
+  line-height: 30px;
+  text-decoration: none;
+}
+
+section#topbar nav ul#main-menu li,
+section#topbar nav ul#main-menu li a {
+  color:rgba(238,230,217,1);
+  font-size: 13px;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: 1px;
+  line-height: 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+section#topbar nav ul#main-menu li:hover,
+section#topbar nav ul#main-menu li a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+section#topbar nav ul#main-menu li.active,
+section#topbar nav ul#main-menu a.active {
+  color: @activetext;
+}
+
+#content h1.title,
+.section h2.block-title {
+  border-top: 2px solid;
+  font-size: .8rem;
+  letter-spacing: 2px;
+  line-height: 1rem;
+  margin: 0 0 1.5rem 0;
+  padding: 0;
+  padding-top: .4rem;
+  text-transform: uppercase;
+  .deming-stack;
+}
+
+#main p {
+  color:@maintext;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.front #node-2 p {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 2rem;
+  /**/
+	text-shadow: 0 1px 1px #FFF;
+  color:@maintext;
+}
+
+body.page-members div.view-id-members table thead {
+  font-family: Helvetica, Arial, Sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+	text-shadow: 0 1px 1px #FFF;
+  color:@maintext;
+}
+
+body.page-members div.view-id-members table thead a {
+  font-family: Helvetica, Arial, Sans-serif;
+	text-shadow: 0 1px 1px #FFF;
+  color:@maintext;
+  text-decoration: none;
+}
+
+body.page-members div.view-id-members table tbody,
+body.page-members div.view-id-members table tbody td,
+h3.event-title {
+  .vevey-stack;
+  font-size: 24px;
+  letter-spacing: 1px;
+}
+
+h3.event-title a {
+text-decoration: none;
+}
+
+h3.event-title a:hover {
+text-decoration: underline;
+}
+
+div.views-row.event h3.event-title {
+margin-top: 15px;
+}
+
+div.event-date,
+div.location {
+  color: rgba(125, 116, 87, .9);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+div.event-date {
+  border-top: 1px dotted rgba(125, 116, 87, .9);
+  padding-top: 7.5px;
+}
+
+div.event-date .date-display-single,
+div.location div,
+div.location span {
+  color: black;
+}
+
+div.location {
+  margin-top: 15px;
+}
+
+div.location div,
+div.location span {
+  text-transform: capitalize;
+}
+
+footer p {
+  color:@maintext;
+}
+
+/* -----------------------------------------------------*/
+/* ---------------->>> /END bbg.less <<<-----------------*/
+/* -----------------------------------------------------*/
