@@ -3,8 +3,10 @@ React = require 'react'
 module.exports = React.createClass
   render: ->
 
-    {address, phone} = @props.data
+    {title, tagline} = @props.data
+    yr = new Date().getFullYear()
+    msg = "copyright #{yr} — #{title} — #{tagline}"
 
     <footer>
-      <p>Footer stuff will go here</p>
+      <p>{msg}</p>
     </footer>
