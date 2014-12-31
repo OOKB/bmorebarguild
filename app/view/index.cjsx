@@ -18,7 +18,6 @@ module.exports = React.createClass
       <body>
         <div id="wrapper">
           <Head data={@props.data} />
-          <h1>{title}</h1>
           <Main data={@props.data} />
           <Foot data={@props.data} />
         </div>
