@@ -42,12 +42,11 @@ module.exports = (callback) ->
   getData = {}
 
   if data.facebook
-    url = "http://social.cape.io/facebook/#{data.facebook}"
+    url = "http://social.cape.io/facebook/#{data.facebook}/page"
     handleData = (data) ->
       if data.cover and data.cover.images[0]
         data.coverImg = _.rename data.cover.images[0], {source: 'url'}
       return data
-
     getData.fb = makeReq url, handleData
 
   if data.instagram
@@ -62,10 +61,12 @@ module.exports = (callback) ->
     throw err if err
     {fb, insta, members, bars} = serverData
     # console.log serverData
-    data.fb = fb
+    #data.fb = fb
     if fb and fb.name
       data.title = fb.name
       data.mission = fb.mission
+      if fb.events
+        data.events = fb.events.data
 
     # MEMBERS
     bars = _.indexBy bars, 'name'
