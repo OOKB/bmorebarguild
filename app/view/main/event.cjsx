@@ -2,7 +2,7 @@ React = require 'react'
 
 module.exports = React.createClass
   render: ->
-    {name, start_time, end_time, location, id, cover, description, venue} = @props.item
+    {name, start_time, end_time, location, id, cover, description, venue, ticket_uri} = @props.item
     imgSrc =
     dateStr = "#{start_time} - #{end_time}"
     fbLink = "https://www.facebook.com/#{id}"
@@ -16,5 +16,5 @@ module.exports = React.createClass
       <a href={venueLink}>
         <div className="location">{location}</div>
       </a>
-      <p>{description}</p>
+      <p>{description} <a href={ticket_uri}>Tickets!</a></p>
     </li>
