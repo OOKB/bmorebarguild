@@ -43,6 +43,8 @@ gulp.task "browser-sync", ['templates', 'styles', 'static'], ->
   browserSync
     server:
       baseDir: 'public'
+    open: 'external'
+    host: 'l.bmorebarguild.com'
     logConnections: true
     injectChanges: false
     #logLevel: 'debug'
