@@ -2,6 +2,8 @@ r = require 'request'
 _ = require 'queries'
 async = require 'async'
 fs = require 'fs-extra'
+moment = require 'moment'
+
 imgix = require './imgix'
 
 makeReq = (url, handleData) ->
@@ -66,7 +68,10 @@ module.exports = (callback) ->
       data.title = fb.name
       data.mission = fb.mission
       if fb.events
-        data.events = fb.events.data
+        data.events = _.map fb.events.data, (event) ->
+          event.start_time = moment(event.start_time).format('llll')
+          event.end_time = moment(event.end_time).format('hA')
+          event
 
     # MEMBERS
     bars = _.indexBy bars, 'name'
