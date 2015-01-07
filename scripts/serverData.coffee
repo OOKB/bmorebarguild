@@ -69,8 +69,13 @@ module.exports = (callback) ->
       data.mission = fb.mission
       if fb.events
         data.events = _.map fb.events.data, (event) ->
-          event.start_time = moment(event.start_time).format('llll')
-          event.end_time = moment(event.end_time).format('hA')
+          m = moment(event.start_time)
+          event.startTime = m.format 'h:mma'
+          event.weekDay = m.format 'dddd'
+          event.month = m.format 'MMMM'
+          event.day = m.format 'D'
+          event.year = m.format 'YYYY'
+          event.endTime = moment(event.end_time).format('h:mma')
           event
 
     # MEMBERS
