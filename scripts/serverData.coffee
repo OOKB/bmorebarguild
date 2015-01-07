@@ -3,7 +3,7 @@ _ = require 'queries'
 async = require 'async'
 fs = require 'fs-extra'
 moment = require 'moment'
-
+tz = require 'moment-timezone'
 imgix = require './imgix'
 
 makeReq = (url, handleData) ->
@@ -69,13 +69,13 @@ module.exports = (callback) ->
       data.mission = fb.mission
       if fb.events
         data.events = _.map fb.events.data, (event) ->
-          m = moment(event.start_time)
+          m = moment(event.start_time).tz(event.timezone)
           event.startTime = m.format 'h:mma'
           event.weekDay = m.format 'dddd'
           event.month = m.format 'MMMM'
           event.day = m.format 'D'
           event.year = m.format 'YYYY'
-          event.endTime = moment(event.end_time).format('h:mma')
+          event.endTime = moment(event.end_time).tz(event.timezone).format('h:mma')
           event
 
     # MEMBERS
