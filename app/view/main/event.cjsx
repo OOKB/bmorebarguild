@@ -28,14 +28,21 @@ module.exports = React.createClass
     dateStr = "#{start_time} - #{end_time}"
     fbLink = "https://www.facebook.com/#{id}"
     venueLink = "https://www.facebook.com/#{venue.id}"
-    <li className="event">
-      <a href={fbLink}>
-        <h2>{name}</h2>
-        <img src={cover.source} alt={name} />
-      </a>
-      <div className="date">{dateStr}</div>
-      <a href={venueLink}>
-        <div className="location">{location}</div>
-      </a>
-      <p>{description} <a onClick={@handleTicket} href={ticket_uri}>Tickets!</a></p>
+    <li className="event group">
+      <div className="date two columns">{dateStr}</div>
+      <div className="image five columns">
+        <a href={fbLink}>
+          <img src={cover.source} alt={name} />
+        </a>
+        <div className="tickets"><a onClick={@handleTicket} href={ticket_uri}>Get Tickets!</a></div>
+      </div>
+      <div className="info five columns">
+        <a href={fbLink}>
+          <h2>{name}</h2>
+        </a>
+        <a href={venueLink}>
+          <div className="location">{location}</div>
+        </a>
+        <p>{description} </p>
+      </div>
     </li>
