@@ -37,12 +37,12 @@ module.exports = React.createClass
         <div className="tickets"><a onClick={@handleTicket} href={ticket_uri}>Get Tickets!</a></div>
       </div>
       <div className="info five columns">
-        <a href={fbLink}>
-          <h2>{name}</h2>
-        </a>
-        <a href={venueLink}>
-          <div className="location">{location}</div>
-        </a>
+        <h2>
+          <a href={fbLink}>{name}</a>
+        </h2>
+        <div className="location">
+          <a href={venueLink}>{location}</a>
+        </div>
         <p>{description} </p>
       </div>
     </li>
