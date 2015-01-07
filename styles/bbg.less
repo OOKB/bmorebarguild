@@ -86,10 +86,10 @@ section {
   padding-top: 3rem;
 }
 
-section h3 {
+section > h3 {
   border-top: 2px solid;
-  font-size: .8rem;
-  letter-spacing: 2px;
+  font-size: .9rem;
+  letter-spacing: 3px;
   line-height: 1rem;
   margin: 0 0 1.5rem 0;
   padding-top: .4rem;
@@ -109,6 +109,49 @@ section h3 {
   /**/
 	text-shadow: 0 1px 1px #FFF;
   color:@maintext;
+}
+
+/* Events */
+.event h2 {
+  .vevey-stack;
+  font-size: 2rem;
+  margin-bottom: .25em;
+}
+
+.event .date,
+.event .location {
+  color: @maintext;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.event .location {
+  margin: 1rem 0;
+  text-transform: capitalize;
+}
+
+.event .location > span {
+  .deming-stack;
+  font-size: 75%;
+  letter-spacing: 2px;
+}
+
+.event .image img { width: 100%; max-width: 100%; }
+
+.event .tickets a {
+  .deming-stack;
+  border: 3px solid;
+  border-radius: .4em;
+  display: block;
+  font-size: 1.6em;
+  padding: .4em;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+}
+
+.event .tickets a:hover {
+  background: rgba(158,81,78,.2);
 }
 
 /* Members list */
@@ -137,11 +180,22 @@ section h3 {
   border-top: 1px solid black;
 }
 
+#members table,
 #members table tbody,
 #members table tbody td {
+  margin: 0;
+  padding: 0;
+}
+
+#members table tbody td {
+  padding: .4em .1em;
+}
+
+#members table tbody p,
+#members table tbody ul {
   .vevey-stack;
-  font-size: 2rem;
-  letter-spacing: 1px;
+  font-size: 1.66rem;
+  line-height: 1.9rem;
 }
 
 #bbg tbody tr {
@@ -164,27 +218,6 @@ section h3 {
   border-spacing: 0;
   border-color: transparent;
 }
-
-/* Events */
-.event h2 {
-  .vevey-stack;
-  font-size: 2rem;
-  margin-bottom: .25em;
-}
-
-.event .date,
-.event .location {
-  color: @maintext;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-.event .location {
-  margin-top: 15px;
-  text-transform: capitalize;
-}
-
-.event .image img { width: 100%; max-width: 100%; }
 
 /* contact */
 #contact .contact-form {
