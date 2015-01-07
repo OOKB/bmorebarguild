@@ -21,6 +21,8 @@ module.exports = React.createClass
           <Main data={@props.data} />
           <Foot data={@props.data} />
         </div>
-        <script src="/assets/app.js" />
+        <div id="fb-root"></div>
+        <script src="/assets/app.js" type="text/javascript" />
+        <script id="facebook-jssdk" src="//connect.facebook.net/en_US/sdk.js" type="text/javascript" />
       </body>
     </html>
