@@ -111,6 +111,49 @@ section > h3 {
   color:@maintext;
 }
 
+/* Events */
+.event h2 {
+  .vevey-stack;
+  font-size: 2rem;
+  margin-bottom: .25em;
+}
+
+.event .date,
+.event .location {
+  color: @maintext;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.event .location {
+  margin: 1rem 0;
+  text-transform: capitalize;
+}
+
+.event .location > span {
+  .deming-stack;
+  font-size: 75%;
+  letter-spacing: 2px;
+}
+
+.event .image img { width: 100%; max-width: 100%; }
+
+.event .tickets a {
+  .deming-stack;
+  border: 3px solid;
+  border-radius: .4em;
+  display: block;
+  font-size: 1.6em;
+  padding: .4em;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+}
+
+.event .tickets a:hover {
+  background: rgba(158,81,78,.2);
+}
+
 /* Members list */
 #members table {
   width: 100%;
@@ -174,43 +217,6 @@ section > h3 {
 #bbg td {
   border-spacing: 0;
   border-color: transparent;
-}
-
-/* Events */
-.event h2 {
-  .vevey-stack;
-  font-size: 2rem;
-  margin-bottom: .25em;
-}
-
-.event .date,
-.event .location {
-  color: @maintext;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-.event .location {
-  margin-top: 15px;
-  text-transform: capitalize;
-}
-
-.event .image img { width: 100%; max-width: 100%; }
-
-.event .tickets a {
-  .deming-stack;
-  border: 3px solid;
-  border-radius: .4em;
-  display: block;
-  font-size: 1.6em;
-  padding: .4em;
-  text-align: center;
-  text-decoration: none;
-  width: 100%;
-}
-
-.event .tickets a:hover {
-  background: rgba(158,81,78,.2);
 }
 
 /* contact */

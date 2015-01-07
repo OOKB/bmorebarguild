@@ -41,7 +41,7 @@ module.exports = React.createClass
           <a href={fbLink}>{name}</a>
         </h2>
         <div className="location">
-          <a href={venueLink}>{location}</a>
+          <span>Location:</span> <a href={venueLink}>{location}</a>
         </div>
         <p>{description} </p>
       </div>
