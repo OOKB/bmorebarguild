@@ -9,4 +9,7 @@ module.exports = React.createClass
 
     <footer>
       <p>{msg}</p>
+      <div className="credits">
+        <p>Site by <a href="http://www.ookb.co/">OOKB</a> / Powered by <a href="http://www.cape.io/">CAPE</a></p>
+      </div>
     </footer>
