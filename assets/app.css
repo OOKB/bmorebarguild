@@ -575,11 +575,6 @@ section > h3 {
 }
 .date ul {
   text-align: center;
-  border-radius: 10px;
-  padding-top: 1em;
-  padding-bottom: 1.25em;
-  background: rgba(255, 255, 255, 0.66);
-  box-shadow: 0 2px 4px;
 }
 .date ul li:nth-child(2) {
   color: #9e514e;
