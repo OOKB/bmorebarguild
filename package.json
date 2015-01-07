@@ -33,7 +33,8 @@
     "queries": "0.0.2",
     "coffee-react": "^2.1.2",
     "lodash": "^2.4.1",
-    "coffee-reactify": "^2.1.0"
+    "coffee-reactify": "^2.1.0",
+    "moment": "^2.8.4"
   },
   "devDependencies": {
     "browserify": "^8.0.2",
