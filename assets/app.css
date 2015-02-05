@@ -682,3 +682,11 @@ table thead a {
 footer p {
   color: rgba(125, 116, 87, 0.9);
 }
+footer .credits {
+  text-align: right;
+  font-size: 75%;
+  opacity: .3333333;
+}
+footer .credits:hover {
+  opacity: .75;
+}
